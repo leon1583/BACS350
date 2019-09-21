@@ -159,6 +159,10 @@ pre {
     background-color: #0E3D65;
 }
 
+.crop{
+    object-fit: cover;
+}
+
 .form-error {
     color: red;
 }
