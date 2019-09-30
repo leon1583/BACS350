@@ -23,6 +23,6 @@
 
 
     // Display the HTML in the page
-    echo render_page('Caleb\'s Working Files', "Documents Located Here", $home . $content);
+    echo render_page('Caleb\'s Working Files', "His files are located here.", $home . $content);
 
 ?>

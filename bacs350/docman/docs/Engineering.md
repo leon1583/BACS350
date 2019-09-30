@@ -18,8 +18,9 @@ Notes for creating the BACS 350 Project #5 - Document Manager
 * Create directory to hold documents
 * Create Engineering.md for dev notes
 * [Test locally](http://localhost/bacs350/docman)
+    * Note: this will check your computer to see if you have this document. No issues if it errors out.
 * Deploy to server
-* [Test remotely](https://unco-bacs.org/bacs350/docman)
+* [Test remotely](https://findingfocusministries.com/bacs350/docman)
 * Use demo/13 to build Doc Links design pattern
 * Build list of all documents
 * Experiment with Doc Links design pattern
@@ -37,7 +38,8 @@ Notes for creating the BACS 350 Project #5 - Document Manager
 * Select Markdown doc for display
 * Create Markdown.md
 * [Test locally](http://localhost/bacs350/docman)
-* [Test remotely](https://unco-bacs.org/bacs350/docman)
+    * Note: this will check your computer to see if you have this document. No issues if it errors out.
+* [Test remotely](https://findingfocusministries.com/bacs350/docman)
 * Create Docs.md
 * Add description text to index.php
 * Create Test.md for testing
