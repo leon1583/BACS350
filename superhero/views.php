@@ -1,13 +1,12 @@
 <?php
 
-    /*
-        render_page -- build a page with custom settings
-    */
-
+   
+    // render_page -- build a page with custom settings
     function render_page($site_title, $page_title, $content) {
-
-        return '
-            <!DOCTYPE html>
+        header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+        header("Cache-Control: post-check=0, pre-check=0", false);
+        header("Pragma: no-cache");
+        return '<!DOCTYPE html>
             <html lang="en">
                 <head>
 
@@ -47,19 +46,13 @@
                 </body>
             </html>
         ';
-
     }
 
-    /*
-        render_card -- build HTML text for a card
-    */
 
-    function render_card($image, $title, $body) {
+    // render_card -- build HTML text for a card
+    function render_card($title, $body) {
         return '
             <div class="card">
-                <div class="card-image">
-                ' . $image .'
-                </div>
                 <div class="card-header">
                     ' . $title . '
                 </div>
@@ -70,7 +63,6 @@
                 </div>
             </div>
         ';
-
     }
 
 ?>
