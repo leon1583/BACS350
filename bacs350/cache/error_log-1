@@ -1,8 +1,0 @@
-
-
-
-[14-Oct-2019 21:19:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function bluehost_connect() in /home3/indingg5/public_html/bacs350/superhero/superhero_db.php:122
-Stack trace:
-#0 /home3/indingg5/public_html/bacs350/superhero/index.php(6): require_once()
-#1 {main}
-  thrown in /home3/indingg5/public_html/bacs350/superhero/superhero_db.php on line 122

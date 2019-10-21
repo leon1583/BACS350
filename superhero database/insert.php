@@ -24,7 +24,9 @@
 
 
         // Display the HTML in the page
-        $intro = 'This form collects data to create a superhero record in the database.';
+        $intro = 'This form collects data to create a superhero record in the database. The picture choices are as follows (without quotes): "batman.jpg" ; "bibleman.jpg" ; "cap.jpg" ; "hezekiah.jpg" ; "ironman.jpg" ; "spiderman.jpg" ; and "superman.jpg"
+        <br>
+        <em>Note: you will need to force refresh (SHIFT + F5) the database page after you made the superhero to see the changes you made.</em>';
         $content = "$intro $list $add_form $clear_button";
 
         echo render_page('Caleb\'s Website', "Add Superhero", $content);

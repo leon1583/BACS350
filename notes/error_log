@@ -1,0 +1,9 @@
+[18-Oct-2019 22:32:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/indingg5/public_html/bacs350/notes/insert.php:29) in /home3/indingg5/public_html/bacs350/notes/insert.php on line 36
+[18-Oct-2019 22:37:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function update_note() in /home3/indingg5/public_html/bacs350/notes/update.php:36
+Stack trace:
+#0 {main}
+  thrown in /home3/indingg5/public_html/bacs350/notes/update.php on line 36
+[18-Oct-2019 22:37:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function update_note() in /home3/indingg5/public_html/bacs350/notes/update.php:36
+Stack trace:
+#0 {main}
+  thrown in /home3/indingg5/public_html/bacs350/notes/update.php on line 36
