@@ -8,7 +8,7 @@
     add_log($log, "demo/23/index.php page loaded");
 ?>
 
-<h1>Demo 23 - Page Logging Demo</h1>
+<h1>Caleb's Page Logging </h1>
 <p>
     <a href="index.php">Refresh Index Page</a>
 </p>
