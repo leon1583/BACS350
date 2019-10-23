@@ -129,9 +129,9 @@
 
     // Connect to the Bluehost database
     function bluehost_connect() {
-        $dbname = 'uncobacs_350';
-        $username = 'uncobacs_350';
-        $password = 'BACS_350';
+        $dbname = 'indingg5_log';
+        $username = 'indingg5_bacs350';
+        $password = 'Calgary2018!';
         $port = '3306';
         $host = "localhost:$port";
         return log_database($host, $dbname, $username, $password);
