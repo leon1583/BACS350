@@ -15,19 +15,19 @@
                         <td><input type="date" name="date"></td>
                     </tr>
                     <tr>
-                        <td><label>Designer:</label></td>
+                        <td><label>Designer Name:</label></td>
                         <td><input type="text" name="designer"></td>
                     </tr>
                     <tr>
-                        <td><label>Page to Review:</label></td>
+                        <td><label>Webpage Reviewed:</label></td>
                         <td><input type="url" name="url"></td>
                     </tr>
                     <tr>
-                        <td><label>Review Score:</label></td>
+                        <td><label>Review Score (0-10):</label></td>
                         <td><input type="number" name="score"></td>
                     </tr>
                     <tr>
-                        <td><label>Page to Review:</label></td>
+                        <td><label>Comments:</label></td>
                         <td><textarea name="report"></textarea></td>
                     </tr>
                     <tr>
@@ -41,7 +41,7 @@
 
 
     // Create an HTML list on the output
-    function render_reviews($reviews) {
+    function render_reviews($reviews) { //points to index --> review_db
         $html = '';
         foreach($reviews as $row) { //problem noted line 46, invalid argument
             $title = $row['title'];
@@ -54,8 +54,8 @@
                     <a class='button' href='$edit_href'>Edit</a>
                     <a class='button' href='$delete_href'>Delete</a>
                 </p>";
-            $html .= render_card($title, $body);
-        } //need semicolon
+            $html .= render_card($title, $body); // might need to remove .=
+        } //need semicolon?
         return $html;
     }
 

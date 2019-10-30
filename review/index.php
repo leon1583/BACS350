@@ -7,8 +7,10 @@
 
 
     // List review records
-    $list = render_reviews(list_reviews ($db));
-
+    $list = render_reviews(list_reviews ($db)); //gives array, need to pass array
+//    $x = $list;
+//    echo $x;
+   
     
     // Button to go to other views
     $add_button = '<p><a class="button" href="insert.php">Add Review</a></p>';
