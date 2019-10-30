@@ -6,7 +6,7 @@
     // add_review_form -- Create an HTML form to add record.
     // Fields: designer, url, report, score, date
     function add_review_form() {
-        $title = 'Add Review';
+        $title = 'Add A Review';
         $body = '
             <form action="insert.php" method="get">
                 <table class="table table-hover">
@@ -43,19 +43,19 @@
     // Create an HTML list on the output
     function render_reviews($reviews) {
         $html = '';
-        foreach($reviews as $row) {
+        foreach($reviews as $row) { //problem noted line 46, invalid argument
             $title = $row['title'];
             $delete_href = "delete.php?id=$row[id]";
             $edit_href = "update.php?id=$row[id]";
             $body = "
-                <p>Note #$row[id]. $title</p>
+                <p>Reveiw #$row[id]. $title</p>
                 <p>$row[body]</p>
                 <p>
                     <a class='button' href='$edit_href'>Edit</a>
                     <a class='button' href='$delete_href'>Delete</a>
                 </p>";
             $html .= render_card($title, $body);
-        }
+        } //need semicolon
         return $html;
     }
 
@@ -66,7 +66,7 @@
         $date  = $record['date'];
         $title = $record['title'];
         $body  = $record['body'];
-        $card_title = "Edit Note";
+        $card_title = "Edit Review";
         $card_body = '
             <form action="update.php" method="post">
                 <table class="table table-hover">

@@ -22,7 +22,7 @@
 
         
         // Display the HTML in the page
-        echo render_page('UNC BACS 350', "Add Review", $add_form);
+        echo render_page('Caleb\'s Review App', "Plase add a review.", $add_form);
     }
     else {
         

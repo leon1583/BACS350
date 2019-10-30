@@ -16,9 +16,9 @@ CREATE TABLE reviews (
 
 -- Connection Settings  - PHP Variables 
 
-$dbname = 'uncobacs_350';
-$username = 'uncobacs_350';
-$password = 'BACS_350';
+$dbname = 'indingg5_review';
+$username = 'indingg5_review';
+$password = 'Dohardthings';
 $port = '3306';
 $host = "localhost:$port";
 
