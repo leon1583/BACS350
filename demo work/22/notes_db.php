@@ -96,7 +96,7 @@
     function bluehost_connect() {
         $dbname = 'indingg5_notes';
         $username = 'indingg5_bacs350';
-        $password = 'Calgary2018!';
+        $password = '***';
         $port = '3306';
         $host = "localhost:$port";
         return note_database($host, $dbname, $username, $password);

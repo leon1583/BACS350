@@ -98,7 +98,7 @@
     function bluehost_connect() {
         $dbname = 'indingg5_superhero';
         $username = 'indingg5_bacs350';
-        $password = 'Calgary2018!';
+        $password = '***';
         $port = '3306';
         $host = "localhost:$port";
         //$db_connect = "mysql:host=localhost:$port;dbname=$dbname";

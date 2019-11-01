@@ -19,7 +19,7 @@
         $dbname = 'indingg5_subscribers';
         $db_connect = "mysql:host=localhost:$port;dbname=$dbname";
         $username = 'indingg5_bacs350';
-        $password = 'Calgary2018!';
+        $password = '***';
        
         return db_connect($db_connect, $username, $password);
 
