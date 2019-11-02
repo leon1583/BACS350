@@ -2,94 +2,71 @@
 
     require_once 'views.php';
 
+    /*
+        * id - int (primary key and autoincrement)
+        * designer - string (100 chars)
+        * url - string(200 chars)
+        * report - text(no limit)
+        * score - number(0-10)
+        * date - date
+    */
 
     // add_review_form -- Create an HTML form to add record.
     // Fields: designer, url, report, score, date
     function add_review_form() {
-        $title = 'Add A Review';
-        $body = '
-            <form action="insert.php" method="get">
-                <table class="table table-hover">
-                    <tr>
-                        <td width="500"><label>Date:</label></td>
-                        <td><input type="date" name="date"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Designer Name:</label></td>
-                        <td><input type="text" name="designer"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Webpage Reviewed:</label></td>
-                        <td><input type="url" name="url"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Review Score (0-10):</label></td>
-                        <td><input type="number" name="score"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Comments:</label></td>
-                        <td><textarea name="report"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><button class="button">Save Review</button></td>
-                    </tr>
-                </table>
-            </form>
-            ';
-        return render_card($title, $body);
+        $title = '<h2>Add New Design Review</h2>';
+        $report = 'Default Requirements
+                        
+* Main page is "bacs350/index.php"
+* Data Views (list, detail, add, edit, delete)
+* Create and modify markdown content
+* Run slide show in new tab
+* Custom styles for your app
+* Log all pages loaded
+* Use design patterns to avoid duplication
+* Page HTML and CSS validate';
+        $add_form = render_template('add.html', array('report' => $report));
+        $content = "$title $add_form";
+
+        // Create main part of page content
+        $settings = array(
+            "site_title" => "Caleb's Reviews",
+            "page_title" => "A Design Review App", 
+            "logo"       => "Bear.png",
+            "style"      => 'style.css',
+            "content"    => $content);
+
+        return render_page($settings);
     }
 
 
     // Create an HTML list on the output
-    function render_reviews($reviews) { //points to index --> review_db
+    function render_reviews($reviews) {
         $html = '';
-        foreach($reviews as $row) { //problem noted line 46, invalid argument
-            $title = $row['title'];
-            $delete_href = "delete.php?id=$row[id]";
-            $edit_href = "update.php?id=$row[id]";
-            $body = "
-                <p>Reveiw #$row[id]. $title</p>
-                <p>$row[body]</p>
-                <p>
-                    <a class='button' href='$edit_href'>Edit</a>
-                    <a class='button' href='$delete_href'>Delete</a>
-                </p>";
-            $html .= render_card($title, $body); // might need to remove .=
-        } //need semicolon?
+        foreach($reviews as $row) {
+            $title = "Review #$row[id]. $row[url]";
+            $body = render_template("list.html", $row);
+            $html .= render_card($title, $body);
+        }
         return $html;
     }
 
 
     // Show form for adding a record
     function edit_review_form($record) {
-        $id    = $record['id'];
-        $date  = $record['date'];
-        $title = $record['title'];
-        $body  = $record['body'];
-        $card_title = "Edit Review";
-        $card_body = '
-            <form action="update.php" method="post">
-                <table class="table table-hover">
-                    <tr>
-                        <td><label>Date:</label></td>
-                        <td><input type="date" name="date" value="' . $date . '"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Title:</label></td>
-                        <td><input type="text" name="title" value="' . $title . '"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Body:</label></td>
-                        <td><textarea name="body">' . $body . '</textarea></td>
-                    </tr>
-                    <tr>
-                        <td><button class="button">Save Record</button></td>
-                    </tr>
-                </table>
-                <input type="hidden" name="id" value="' . $id . '">
-            </form>
-        ';
-        return render_card($card_title, $card_body);
+        $body = render_template("edit.html", $record);
+        $title = "Edit Review #$record[id]. $record[url]";
+        $content = render_card($title, $body);
+        
+        // Create main part of page content
+        $settings = array(
+            "site_title" => "Caleb's Reviews",
+            "page_title" => "A Design Review App", 
+            "logo"       => "Bear.png",
+            "style"      => 'style.css',
+            "content"    => $content);
+
+        return render_page($settings);
     }
     
 ?>

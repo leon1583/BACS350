@@ -5,19 +5,13 @@
     ------------------------------- */
 
     // Add a new record
-    function add_review($db, $designer, $url, $report, $score, $date) {
+    function add_review($db, $title, $body, $date) {
         try {
-            // INSERT INTO reviews (designer, url, report, score, date) 
-            // VALUES (:designer, :url, :report, :score, :date);
-            $query = "INSERT INTO reviews (designer, url, report, score, date) 
-                      VALUES (:designer, :url, :report, :score, :date);";
-            
+            $query = "INSERT INTO reviews (title, body, date) VALUES (:title, :body, :date);";
             $statement = $db->prepare($query);
-            $statement->bindValue(':designer', $designer);
-            $statement->bindValue(':url',      $url);
-            $statement->bindValue(':report',   $report);
-            $statement->bindValue(':score',    $score);
-            $statement->bindValue(':date',     $date);
+            $statement->bindValue(':title', $title);
+            $statement->bindValue(':body', $body);
+            $statement->bindValue(':date', $date);
             $statement->execute();
             $statement->closeCursor();
             return true;
@@ -29,7 +23,7 @@
     }
 
 
-    // Lookup Record using ID
+     // Lookup Record using ID
     function get_review($db, $id) {
         try {
             $query = "SELECT * FROM reviews WHERE id = :id";
@@ -44,8 +38,9 @@
             echo "<p>Error: $error_message</p>";
             die();
         }
+       
     }
-
+       
 
     // Query for all reviews
     function list_reviews ($db) {
@@ -80,34 +75,27 @@
     }
 
 
-    // Modify database row
-    function update_review ($db, $id, $designer, $url, $report, $score, $date) {
+    // Update the database
+    function update_review ($db, $id, $title, $body, $date) {
         try {
-            // UPDATE reviews 
-            // SET designer=:designer, url=:url, report=:report, score=:score, date=:date
-            // WHERE id = :id;
-            $query = "UPDATE reviews 
-                SET designer=:designer, url=:url, report=:report, score=:score, date=:date 
-                WHERE id = :id";
-            
-            $statement = $db->prepare($query);
+ // Modify database row
+ $query = "UPDATE reviews SET title=:title, body=:body, date=:date WHERE id = :id";
+ $statement = $db->prepare($query);
 
-            $statement->bindValue(':id',       $id);
-            $statement->bindValue(':designer', $designer);
-            $statement->bindValue(':url',      $url);
-            $statement->bindValue(':report',   $report);
-            $statement->bindValue(':score',    $score);
-            $statement->bindValue(':date',     $date);
+ $statement->bindValue(':id', $id);
+ $statement->bindValue(':title', $title);
+ $statement->bindValue(':body', $body);
+ $statement->bindValue(':date', $date);
 
-            $statement->execute();
-            $statement->closeCursor();
+ $statement->execute();
+ $statement->closeCursor();
 
-            return true;
-        } catch (PDOException $e) {
-            $error_message = $e->getMessage();
-            echo "<p>Error: $error_message</p>";
-            die();
-        }
+ return true;
+ } catch (PDOException $e) {
+ $error_message = $e->getMessage();
+ echo "<p>Error: $error_message</p>";
+ die();
+ }
 
     }
 
@@ -130,12 +118,11 @@
         }
     }
 
-
     // Connect to the Bluehost database
     function bluehost_connect() {
         $dbname = 'indingg5_review';
         $username = 'indingg5_review';
-        $password = 'Dohardthings';
+        $password = '***';
         $port = '3306';
         $host = "localhost:$port";
         return review_database($host, $dbname, $username, $password);

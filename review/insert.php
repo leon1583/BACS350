@@ -17,12 +17,9 @@
     // Show form when vars not set
     if ($designer == '' || $url == '' || $report == '' || $score == '' || $date == '') {
         
-        // Form view to add notes
-        $add_form = add_review_form();
+        // Collect data using a form
+        echo add_review_form();
 
-        
-        // Display the HTML in the page
-        echo render_page('Caleb\'s Review App', "Plase add a review.", $add_form);
     }
     else {
         
