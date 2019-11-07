@@ -12,6 +12,10 @@
         <p>
             <a href="https://www.findingfocusministries.com/">Home</a>
         </p>
+        <p> <a href="https://github.com/leon1583/BACS350">GitHub (Note- Currently Private)</a> 
+        </p>
+        <p> <a href="https://findingfocusministries.com/bacs200/">Homepage for BACS 200</a> 
+        </p>
         <p> 
             This page is the beginning of an ongoing project in BACS 350. This is not as complete as I would like it to be. Check back later for future development!
         </p>
