@@ -1,76 +1,76 @@
-Building Your App
+Project 11- Slides (with My Pictures)
 
-* Step-by-step application development
-* Friday, Nov 16, 2018
-* by Mark Seaman
+* To be honest, I haven't figured it out yet
+* Not sure how to design the database.
+* Scroll right to see my future goals and photography
+* Scroll down to see my progress and what I need to do
+* by Caleb Leonard
 
-![](summer.jpg)
+![](above-clouds.jpg)
 
 --
 
 ## Development Process
-* Create a page for the app
-* Customize general code to create new datatype
-* Debug one feature at a time
-* Fix before moving forward
+* Coppied the code from Mark's server
+* Tried to clone it
+* Discovered the code kills the PHP page if the database isn't connected
+* Not sure how to build the slides database
 
 --
 
-## Software Lifecycle
-* Requirements
-* Design
-* Code
-* Test
+## The result
+* Obviously, failure
+* Will need to visit with Mark or see some suggestions
+* Hence, this slideshow confessing my failure (haha)
+* This slideshow is from the demo 31 (see /bacs350/mydemo/31)
+
+![](alberta-mountains.jpg)
 
 --
 
-## Data
-Review:
+## What I learned
+For the slides.md file:
 
-* date - date of last update
-* title - title of record
-* body - text for the record
-
---
-
-## Views
-* List
-* Details
-* Add
-* Edit
-* Delete
-
---
-
-## Code structure
-* CRUD functions
-* View render functions
-* Controller that manages views
-* Page and view templates
-* Standard stylesheet
+* '#' starts a new list (see right ticker)
+* '##' will continue the slides down the list
+* '*' bullets each point
+* '![]'(name) adds a picture/code
 
 
 ---
 
 
-# Testing
-* Try each feature interactively
-* Code a page with links for testing
+# Future Goals & Photography
+* Figure out the database for project 11. 
+* Get it to work
+* Update all code with secret_settings.php
+* Exclude the code with sensitive passwords
+* Publish the 350 code after this work
 
 --
 
-## Design Reviews
-* Published and share code
-* Gather feedback from Design Reviews
-* Fix issues that are found
-
-
-![](Bear.png)
+## Drone Picture
+* This picture is my favorite
+* Taken south of Boulder, Colorado
+![](boulder.jpg)
 
 --
 
-# My Own Side
-* I made this slide
-* Here is a picture from the drone I took recently.
+## Lightning Picture
+* Read Job 36:29-30 
+* Aside from drone photography, I enjoy storm chasing
+* I love feeling humbled by the storm
+![](lightning.jpg)
 
-![](fogabove.JPG)
+--
+
+## Astrophotography
+* Read Isaiah 40:26
+* Picture was taken near VirginaDale, Colorado
+![](stars.jpg)
+
+--
+# Thank you
+* Thanks for going through the slideshow!
+* "This is love: not that we loved God, but that he loved us and sent his Son as an atoning sacrifice for our sins." (1 John 4:10)
+![](cross.jpg)
