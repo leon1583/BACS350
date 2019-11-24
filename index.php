@@ -65,6 +65,9 @@
             <li>
                 <a href="#">Project 15 - N/A</a>
             </li>
+            <li>
+                <a href="https://findingfocusministries.com/bacs350/goals">Requirements, Goals, and Hints</a>
+            </li>
         </ul>
         <p> 
             My Demos:
