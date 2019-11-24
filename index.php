@@ -12,7 +12,7 @@
         <p>
             <a href="https://www.findingfocusministries.com/">Home</a>
         </p>
-        <p> <a href="https://github.com/leon1583/BACS350">GitHub (Note- Currently Private)</a> 
+        <p> <a href="https://github.com/leon1583/BACS350">My GitHub</a> 
         </p>
         <p> <a href="https://findingfocusministries.com/bacs200/">Homepage for BACS 200</a> 
         </p>
@@ -24,31 +24,46 @@
             My Projects:
         </p>
         <ul>
-            <li> <a href="https://findingfocusministries.com">Project 1</a></li>
+            <li> <a href="https://findingfocusministries.com">Project 1- WordPress Blog</a></li>
             <li> <a href="https://findingfocusministries.com/bacs350">Project 2 (THIS PAGE)</a></li>
             <li>
-                <a href="https://findingfocusministries.com/bacs350/superhero/index.php">Project 3</a>
+                <a href="https://findingfocusministries.com/bacs350/superhero/index.php">Project 3- Superhero Database</a>
             </li>
             <li>
-                <a href="https://findingfocusministries.com/bacs350/planner/index.php">Project 4</a>
+                <a href="https://findingfocusministries.com/bacs350/planner/index.php">Project 4- Planner</a>
             </li>
             <li>
-                <a href="https://findingfocusministries.com/bacs350/docman/index.php">Project 5</a>
+                <a href="https://findingfocusministries.com/bacs350/docman/index.php">Project 5- Docs Manager</a>
             </li>
             <li>
-                <a href="https://findingfocusministries.com/bacs350/subscriber/index.php">Project 6</a>
+                <a href="https://findingfocusministries.com/bacs350/subscriber/index.php">Project 6- Subscriber Database</a>
             </li>
             <li>
-                <a href="https://findingfocusministries.com/bacs350/superhero/index.php">Project 7</a>
+                <a href="https://findingfocusministries.com/bacs350/superhero/index.php">Project 7- Superhero Database (Updated)</a>
             </li>
             <li>
-                <a href="https://findingfocusministries.com/bacs350/notes/index.php">Project 8</a>
+                <a href="https://findingfocusministries.com/bacs350/notes/index.php">Project 8- Notes App</a>
             </li>
             <li>
-                <a href="https://findingfocusministries.com/bacs350/review/index.php">Project 9</a>
+                <a href="https://findingfocusministries.com/bacs350/review/index.php">Project 9- Review App</a>
             </li>
             <li>
-                <a href="https://findingfocusministries.com/bacs350/slides.php">Project 10</a>
+                <a href="https://findingfocusministries.com/bacs350/slides/index.php">Project 10- Slides App</a>
+            </li>
+            <li>
+                <a href="#">Project 11 - N/A</a>
+            </li>
+            <li>
+                <a href="#">Project 12 - N/A</a>
+            </li>
+            <li>
+                <a href="#">Project 13 - N/A</a>
+            </li>
+            <li>
+                <a href="#">Project 14 - N/A</a>
+            </li>
+            <li>
+                <a href="#">Project 15 - N/A</a>
             </li>
         </ul>
         <p> 

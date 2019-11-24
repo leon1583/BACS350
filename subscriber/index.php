@@ -1,3 +1,7 @@
+
+    //require_once 'views.php'; //add custom style to it - failed
+    
+
 <h1>Subscriber Database</h1>
 
 <p>
@@ -8,10 +12,13 @@
 </p>
 
 <h2>Subscribers</h2>
+
 <?php
+
 
     // Connect to Subscribers database automatically
     require 'db.php';
+    require_once 'style.css'; //add custom style to it - failed
 
     
     // Get a list of records into an array
@@ -28,6 +35,9 @@
     }
     echo '</ul>';
 
+
 ?>
 
 <p>This query was successful. :D</p>
+<p>This query was successful. :D</p>
+

@@ -1,5 +1,9 @@
-[16-Nov-2019 22:17:20 UTC] PHP Fatal error:  Cannot redeclare db_connect() (previously declared in /home3/indingg5/public_html/bacs350/slides/db.php:36) in /home3/indingg5/public_html/bacs350/slides/secret_settings.php on line 34
+[24-Nov-2019 23:11:05 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home3/indingg5/public_html/bacs350/subscriber/index.php on line 5
+[24-Nov-2019 23:12:38 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home3/indingg5/public_html/bacs350/subscriber/index.php on line 6
+[24-Nov-2019 23:12:39 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home3/indingg5/public_html/bacs350/subscriber/index.php on line 6
+[24-Nov-2019 23:14:07 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home3/indingg5/public_html/bacs350/subscriber/index.php on line 6
+[24-Nov-2019 23:14:18 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home3/indingg5/public_html/bacs350/subscriber/index.php on line 6
 
-[16-Nov-2019 22:19:42 UTC] PHP Fatal error:  Cannot redeclare db_connect() (previously declared in /home3/indingg5/public_html/bacs350/slides/db.php:36) in /home3/indingg5/public_html/bacs350/slides/secret_settings.php on line 34
+[24-Nov-2019 23:14:21 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home3/indingg5/public_html/bacs350/subscriber/index.php on line 6
 
-[16-Nov-2019 22:19:44 UTC] PHP Fatal error:  Cannot redeclare db_connect() (previously declared in /home3/indingg5/public_html/bacs350/slides/db.php:36) in /home3/indingg5/public_html/bacs350/slides/secret_settings.php on line 34
+[24-Nov-2019 23:14:48 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home3/indingg5/public_html/bacs350/subscriber/index.php on line 36
