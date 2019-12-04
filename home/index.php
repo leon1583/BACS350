@@ -20,6 +20,8 @@
             This page is the beginning of an ongoing project in BACS 350. This is not as complete as I would like it to be. Check back later for future development!
         </p>
         
+        <p> <a href="https://findingfocusministries.com/bacs350/docman/index.php">Project Documentation</a> 
+        
         <p> 
             My Projects:
         </p>
@@ -51,19 +53,7 @@
                 <a href="https://findingfocusministries.com/bacs350/slides/index.php">Project 10- Slides App</a>
             </li>
             <li>
-                <a href="#">Project 11 - N/A</a>
-            </li>
-            <li>
-                <a href="#">Project 12 - N/A</a>
-            </li>
-            <li>
-                <a href="#">Project 13 - N/A</a>
-            </li>
-            <li>
-                <a href="#">Project 14 - N/A</a>
-            </li>
-            <li>
-                <a href="#">Project 15 - N/A</a>
+                <a href="#">Project 11 (Complete App) - This Current Page is Project 11</a>
             </li>
             <li>
                 <a href="https://findingfocusministries.com/bacs350/goals">Requirements, Goals, and Hints</a>

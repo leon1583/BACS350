@@ -4,7 +4,7 @@
     require_once 'views.php';
     require_once 'notes_views.php';
     require_once 'notes_db.php';
-    require_once 'auth.php';
+    require_once 'auth.php'
 
 
     // List subscriber records

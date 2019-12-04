@@ -25,7 +25,7 @@
     
 
     // Card with docs
-    $title = 'Document List';
+    $title = 'Brain App Documentation';
     $body = $file_list;
     $card = render_card($title, $body);
 
