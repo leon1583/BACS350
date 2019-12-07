@@ -40,7 +40,7 @@
                                     <div class="pull-right">
                                         <img class="img-rounded img-responsive"
                                         src="/bacs350/images/boulder-irons.jpg"
-                                        alt="UNC Bear" width="150px">
+                                        alt="UNC Bear" width="150">
                                     </div>
                                 </div>
                             </div>
